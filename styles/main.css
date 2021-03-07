@@ -1,0 +1,391 @@
+body {
+    font-family: 'Ubuntu Condensed', 'Ubuntu', sans-serif;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header_line {
+    height: 3px;
+    background-color: #265384;
+}
+
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 7px 30px;
+}
+
+.header_wrapper_logo_text {
+    display: flex;
+}
+
+.logo {
+    width: 95px;
+}   
+
+.header_text {
+    margin-left: 28px;
+}
+
+.header_text h1 {
+    font-family: Ubuntu;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.header_text span {
+    font-weight: 300;
+    font-size: 49px;
+    text-transform: uppercase;
+}
+
+.header_text p {
+    font-family: Ubuntu;
+    font-size: 12px;
+}
+
+.header_languages {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.header_languages a {
+    text-decoration: none;
+    color: black;
+}
+
+.header_languages::before {
+    content: '';
+    background: url('../images/icon_globus.svg') no-repeat; 
+    background-size: contain; 
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 5px;
+    left: -18px;
+}
+
+
+.language::after {
+    content: '|';
+    padding: 3px;
+}
+.language:nth-last-child(1)::after {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    
+    background: linear-gradient(0deg, #0E2957 0%, #5784BD 100%);
+    padding: 0px 30px;        
+}
+
+.menu_item img {
+    width: 14px;
+}
+
+.menu_item {
+    border-right: 2px solid #63789A;
+    color: white;
+    text-align: center;
+    padding: 11px 25px;          
+}
+
+.menu_item:last-child {
+    border: none;
+}
+
+section {
+    padding: 0 30px;
+}
+
+.news {
+    display: flex;
+    justify-content:space-around;
+    height: 306px;
+    padding-top: 36px;
+    margin-bottom: 25px;
+}
+
+.news_main {
+    display: flex;
+    box-sizing: border-box;
+    
+}
+
+.news_main_text {
+    background-color: #033d5e;
+    color: white;
+    padding: 17px 23px;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.news_main_more {
+    display: block;
+    color: #E7D21D;
+    text-decoration: none;
+    margin-top: 30px;
+    position: relative;
+}
+
+.news_main_more::after {
+    content: '';
+    background: url(../images/arrow_yellow.svg) center no-repeat;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 7px;
+    margin-left: 8px;
+    
+}
+
+.news_main_img img {
+    height: 306px;
+}
+
+.news_week {
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.news_week_text {
+    background: #EBEBEC;
+    height: 100%;
+    padding: 14px;
+}
+
+.text_header {
+    margin: 0;
+    color: #666666;
+    font-size: 28px;
+}
+
+.main_links {
+    padding: 0 15px;
+}
+
+.main_links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main_links_item {
+    background-color: #cecece;
+    width: 31%;
+    margin: 13px;
+    padding: 25px 25px 25px 66px;
+    box-sizing: border-box;
+    font-size: 23px;
+    position: relative;
+}
+
+.main_links_item:nth-child(1)::before {
+    content: '';
+    background: url(../images/icon_1_osvita.svg) no-repeat;
+    background-size: contain;
+    width: 45%;
+    height: 45%;
+    position: absolute;
+    top: 17px;
+    left: 17px;        
+}
+
+.main_links_item:nth-child(2)::before {
+    content: '';
+    background: url(../images/icon_2_cultura.svg) no-repeat;
+    background-size: contain;
+    width: 45%;
+    height: 45%;
+    position: absolute;
+    top: 17px;
+    left: 17px;        
+}
+
+.main_links_item:nth-child(3)::before {
+    content: '';
+    background: url(../images/icon_3_health.svg) no-repeat;
+    background-size: contain;
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    top: 26px;
+    left: 17px;        
+}
+
+.main_links_item:nth-child(4)::before {
+    content: '';
+    background: url(../images/icon_4_business.svg) no-repeat;
+    background-size: contain;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 22px;
+    left: 21px;        
+}
+
+.main_links_item:nth-child(5)::before {
+    content: '';
+    background: url(../images/icon_5_gov.svg) no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 20px;
+    left: 23px;        
+}
+
+.main_links_item:nth-child(6)::before {
+    content: '';
+    background: url(../images/icon_6_projects.svg) no-repeat;
+    background-size: contain;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 23px;
+    left: 16px;        
+}
+
+.main_block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main_projects_last_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+
+.main_projects_last_item {
+    width: 263px;
+    
+}
+
+.main_projects_last_item h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.last_item_date {
+    color: #999999;
+}
+
+.last_item_text {
+    margin-top: 15px;
+    line-height: 21px;
+}
+
+.see_all {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: #205391;
+    position: relative;
+}
+
+.see_all::after {
+    content: '';
+    background: url(../images/arrow.svg) center no-repeat;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 7px;
+    margin-left: 8px;
+    
+
+}
+
+.main_projects_links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+}
+
+.main_projects_links_item {
+    border: 3px solid #efefef;
+    position: relative;
+    padding: 22px 30px 30px 62px;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.main_projects_links_item_header {
+    font-size: 21px;
+    margin-bottom: 9px;
+}
+
+.main_projects_links_item_header1::before {
+    content: '';
+    background: url(../images/Logo.svg) no-repeat;
+    background-size: contain;
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.main_projects_links_item_header2::before {
+    content: '';
+    background: url(../images/icon_facebook_vector.svg) no-repeat;
+    background-size: contain;
+    width: 22%;
+    height: 22%;
+    position: absolute;
+    top: 19px;
+    left: 20px;
+}
+
+
+.main_video_block img {
+    margin-top: 14px;
+}
+
+.main_video_adv {
+    width: 262px;
+    margin-left: 32px;
+}
+
+.main_video_text {
+    margin: 37px 0 20px 0;
+}
+
+.main_adv_block {
+    background-color: #ebebec;
+    text-align: center;
+    padding: 20px;
+    height: 274px;
+}
+
+.main_adv_text {
+    margin-top: 30px;
+}
+
+footer {
+    height: 60px;
+    background-color: #cecece;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 77px;
+    padding: 0 30px;
+}
+
+.footer_text {
+    color: white;
+}
